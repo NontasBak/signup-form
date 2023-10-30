@@ -76,12 +76,14 @@ table {
     height: 100vh;
     justify-content: center;
     gap: 5rem;
+    min-height: 80vh;
 }
 
 .text-container {
     margin: 0 3rem 2rem 3rem;
     font-weight: bold;
     line-height: 3rem;
+    max-width: 50ch;
 }
 
 .input-container {
@@ -101,7 +103,7 @@ table {
     /* flex-wrap: wrap; */
 }
 
-.input-container p {
+.input-container > p {
     margin-bottom: 2rem;
     font-weight: bolder;
     font-size: 3.5rem;
@@ -136,7 +138,7 @@ button[type="submit"] {
 }
 
 .form-row input {
-    border: 1px solid grey;
+    border: 1.5px solid grey;
     border-radius: 0.5rem;
     height: 2rem;
     font-size: 2rem;
@@ -158,6 +160,7 @@ p a {
     background-color: rgba(0, 0, 0, 0.3);
     border: 5px rgba(74, 52, 26, 0.7);
     border-style: solid none;
+    padding: 15px 0;
 }
 
 .logo-container img {
@@ -174,3 +177,22 @@ p a {
     letter-spacing: 0.2rem;
 }
 
+input.error {
+    border: 1.5px solid red;
+}
+
+input:focus {
+    outline: none;
+    border: 1.5px solid rgb(198, 94, 30);
+    box-shadow: grey 2px 2px 5px;
+}
+
+.error-message::after {
+    content: "* Passwords do not match";
+    color: red;
+    font-size: 1.5rem;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(145, 95, 64);
+}
