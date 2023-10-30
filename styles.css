@@ -148,3 +148,29 @@ p a {
     font-weight: bold;
     text-decoration: underline;
 }
+
+.logo-container {
+    position: relative;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 5px rgba(74, 52, 26, 0.7);
+    border-style: solid none;
+}
+
+.logo-container img {
+    max-width: 250px;
+    filter: grayscale();
+    filter: brightness(100);
+}
+
+.logo-container h1 {
+    color: white;
+    font-size: 7rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+}
+
