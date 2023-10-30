@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+b, u, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -52,7 +52,7 @@ table {
 
 .content {
     font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -60,6 +60,7 @@ table {
 
 .image {
     background-image: url(images/maeva-vigier-qeKXSmkc1Jc-unsplash.jpg);
+    /* background-color: rgb(88, 88, 88); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -67,7 +68,83 @@ table {
     height: auto;
 }
 
-.form-container {
+.right-viewport {
     width: 60vw;
-    background-color: blue;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.text-container {
+    margin: 0 3rem 2rem 3rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.input-container {
+    padding: 3rem 3rem;
+    font-size: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    box-shadow: rgb(189, 189, 189) 5px 5px 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 5rem;
+    /* flex-wrap: wrap; */
+}
+
+.input-container p {
+    margin-bottom: 2rem;
+    font-weight: bolder;
+    font-size: 3.5rem;
+}
+
+.text-container h3 + p {
+    margin-bottom: 3rem;
+}
+
+.form-row div {
+    display: flex;
+    flex-direction: column;
+}
+
+button[type="submit"] {
+    margin-left: 3rem;
+    font-size: 2.5rem;
+    padding: 1.5rem 3rem;
+    background-color: rgb(200, 132, 91);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+}
+
+.already-account {
+    margin-left: 3rem;
+}
+
+.form-row label {
+    margin-bottom: 0.5rem;
+}
+
+.form-row input {
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    height: 2rem;
+    font-size: 2rem;
+    padding: 0.4rem;
+}
+
+p a {
+    color: rgb(200, 132, 91);
+    font-weight: bold;
+    text-decoration: underline;
 }
